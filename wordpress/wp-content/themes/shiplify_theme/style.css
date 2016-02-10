@@ -1,9 +1,26 @@
+body{
+	margin: 0;
+}
+
+#container{
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header{
+	background-image: url(images/header-banner.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+	color: white;
+}
+
 .menu{
 	list-style: none;
 	display: inline-block;
 	padding-left: 0;
 	width: 100%;
-	font-family: open-sans;
 }
 	
 .menu > li{
@@ -36,4 +53,70 @@
 	display: inline-block;
 	margin-top: 5px;
 	padding-right: 30px;
+}
+
+.header-title{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.name-email-box{
+	text-align: center;
+}
+
+.name-email-box .a-b-img, .first-email-input, .search-button{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.name-email-box .a-b-img img{
+	width: 18px;
+}
+
+.name-email-box .centered-background{
+	display: inline-block;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+	margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.name-email-box .first-email-input{
+	width: 400px;
+	padding-left: 10px;
+	padding-right: 10px;
+} 
+
+.name-email-box .first-email-input input{
+	display:inline-block;
+	width: 400px;
+	border: none;
+	font-size: 18px;
+}
+
+.name-email-box .first-email-input .name-input{
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(128,128,128,0.5);
+}
+
+.name-email-box .first-email-input .email-input{
+	margin-top: 10px;
+}
+
+.name-email-box textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+.name-email-box .search-button button{
+	border: none;
+	background-color: white;
+}
+
+.name-email-box .search-button button:hover{
+	cursor: pointer;
+}
+
+.name-email-box .search-button button img{
+	width: 45px;
 }
