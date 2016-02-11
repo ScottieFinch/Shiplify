@@ -2,6 +2,7 @@
 <head>
 <title>Shiplify</title>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="container">
