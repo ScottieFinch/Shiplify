@@ -11,9 +11,13 @@ body {
 #header{
 	background-image: url(images/header-banner.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	
 	color: white;
+}
+
+.top-menu.mobile{
+	display: none;
 }
 
 .menu{
@@ -27,6 +31,18 @@ body {
 	display: inline-block;
 	padding-left: 5%;
 	font-size: 14px;
+}
+.menu >li a{
+	text-decoration: none;
+	color: white;
+}
+
+.menu >li a:hover{
+	text-decoration: underline;
+}
+
+.menu >li.logo-text a:hover{
+	text-decoration: none;
 }
 
 .menu > li.logo-text{
@@ -51,7 +67,7 @@ body {
 	border-radius: 3px;
 }
 
-.login{
+.menu > li.login{
 	float: right;
 	display: inline-block;
 	margin-top: 5px;
@@ -136,10 +152,7 @@ body {
 }
 
 @media only screen and (max-width: 780px) {
-	#header{
-		background-image: none;
-		background-color: #444444;
-	}
+	
 	
 	#header h1{
 		font-size: 24px;
@@ -148,6 +161,40 @@ body {
 	#header h2{
 		font-size: 14px;
 		margin-top: -5px;
+	}
+	
+	.top-menu.mobile{
+		display: block;
+	}
+	
+	.top-menu.non-mobile{
+		display: none;
+	}
+	
+	.menu{
+		text-align: center;
+	}
+	
+	.menu.second-row{
+		margin-top: -5px;
+		font-size: 12px;
+	}
+	
+	.menu > li.centered-row{
+		padding-left: 0;
+	}
+	
+	.menu > li.logo-text{
+		padding-left: 0;
+	}
+
+	.menu > li.sign-up{
+		float: none;
+	}
+	
+	.menu > li.login{
+		float: none;
+		padding-right: 0;
 	}
 	
 	.name-email-box .first-email-input{
@@ -206,7 +253,7 @@ body {
 .footer-container{
 	background-image: url(images/footer-banner.png);
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	color: white;
 	margin-top: 100px;
 }
@@ -249,11 +296,26 @@ body {
 	cursor: pointer;
 }
 
+.logo-copyright{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.logo-copyright img{
+	vertical-align: middle;
+}
+
+.logo-copyright span{
+	padding-left: 10px;
+	vertical-align: middle;
+	font-size: 24px;
+}
+
+.logo-copyright p{
+	font-size: 10px;
+}
 @media only screen and (max-width: 780px) {
-	.footer-container{
-		background-image: none;
-		background-color: #444444;
-	}
 	
 	.three-column-paragraph{
 		width: 80%;

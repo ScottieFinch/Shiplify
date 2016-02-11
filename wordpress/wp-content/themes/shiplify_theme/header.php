@@ -7,15 +7,28 @@
 <body>
 <div id="container">
 <div id="header">
-	<div class="top-menu">
+	<div class="top-menu non-mobile">
 		<ul class="menu">
-			<li class="logo-text"><img src="wp-content/themes/shiplify_theme/images/shiplify-logo.png" /><span>Shiplify<span></li>
-			<li>Carriers</li>
-			<li>Pricing</li>
-			<li>Blog</li>
-			<li>More</li>
-			<li class="login">Log in</li>
-			<li class="sign-up">Sign Up</li>
+			<li class="logo-text"><a href="#"><img src="wp-content/themes/shiplify_theme/images/shiplify-logo.png" /><span><b>Ship</b>lify<span></a></li>
+			<li><a href="#">Carriers</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">More</a></li>
+			<li class="login"><a href="#">Log in</a></li>
+			<li class="sign-up"><a href="#">Sign Up</a></li>
+		</ul>
+	</div>
+	<div class="top-menu mobile">
+		<ul class="menu">
+			<li class="logo-text"><a href="#"><img src="wp-content/themes/shiplify_theme/images/shiplify-logo.png" /><span><b>Ship</b>lify<span></a></li>
+			<li class="sign-up"><a href="#">Sign Up</a></li>
+		</ul>
+		<ul class="menu second-row">
+			<li class="centered-row"><a href="#">Carriers</a></li>
+			<li><a href="#">Pricing</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">More</a></li>
+			<li class="login"><a href="#">Log in</a></li>
 		</ul>
 	</div>
 	<div class="header-title">

@@ -22,7 +22,8 @@
 		</div>
 	</div>
 	<div class="logo-copyright">
-	
+		<img src="wp-content/themes/shiplify_theme/images/shiplify-logo.png" /><span><b>Ship</b>lify</span>
+		<p> © 2013-2014. All rights reserved. Shiplify is a registered trademark of WinYOUship Logistics. </p>
 	</div>
 </div>
 </div>
