@@ -1,12 +1,12 @@
-body{
+body {
 	margin: 0;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
 }
 
-#container{
-	max-width: 1080px;
-	margin-left: auto;
-	margin-right: auto;
-}
+
+/* header styles */
+
 
 #header{
 	background-image: url(images/header-banner.png);
@@ -61,6 +61,17 @@ body{
 .header-title{
 	text-align: center;
 	margin-top: 50px;
+}
+
+.header-title h1{
+	font-weight: normal;
+	font-size: 26pt;
+}
+
+.header-title h2{
+	font-weight: normal;
+	font-size: 12pt;
+	margin-top:-15px;
 }
 
 .name-email-box{
@@ -122,4 +133,138 @@ body{
 
 .name-email-box .search-button button img{
 	width: 45px;
+}
+
+@media only screen and (max-width: 780px) {
+	#header{
+		background-image: none;
+		background-color: #444444;
+	}
+	
+	#header h1{
+		font-size: 24px;
+	}
+	
+	#header h2{
+		font-size: 14px;
+		margin-top: -5px;
+	}
+	
+	.name-email-box .first-email-input{
+		width: 150px;
+	}
+	
+	.name-email-box .first-email-input input{
+		width: 150px;
+	} 
+ }
+
+/* index.php styles  */
+
+#content .body-paragraph{
+	text-align: center;
+    margin-top: 100px;
+}
+
+#content .body-paragraph h2{
+	font-size: 30px;
+	font-weight: normal;
+}
+
+#content .body-paragraph p{
+	text-align: left;
+	font-size: 18px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#content .body-paragraph a{
+	text-decoration: none;
+}
+
+#content .body-paragraph a:hover{
+	text-decoration: underline;
+}
+
+@media only screen and (max-width: 780px) {
+	#content .body-paragraph h2{
+		font-size: 24px;
+	}
+	
+	#content .body-paragraph p{
+		font-size: 12px;
+		width: 80%;
+	}
+}
+
+
+
+/* footer.php styles */
+
+
+.footer-container{
+	background-image: url(images/footer-banner.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+	margin-top: 100px;
+}
+
+.three-column-container{
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.three-column-paragraph{
+	display: inline-block;
+	width: 25%;
+	padding-left: 50px;
+}
+
+.three-column-paragraph h2{
+	font-weight: normal;
+}
+
+.three-column-paragraph:first-child{
+	padding-left: 0px;
+}
+
+#footer .sign-up-button{
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#footer .sign-up-button button{
+	border-radius: 3px;
+	background-color: #e65753;
+	padding: 10px 25px 10px 25px;
+	border: none;
+	color: white;
+}
+
+#footer .sign-up-button button:hover{
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+	.footer-container{
+		background-image: none;
+		background-color: #444444;
+	}
+	
+	.three-column-paragraph{
+		width: 80%;
+		display: block;
+		padding-left: 0;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	
+	.three-column-container{
+		padding-bottom: 0;
+	}
 }
